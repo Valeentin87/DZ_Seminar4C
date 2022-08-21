@@ -4,13 +4,13 @@ int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите натуральную степень B, в которую надо возвести число А");
 int B = Convert.ToInt32(Console.ReadLine());
 int result = degree(A,B);
+Console.WriteLine($"{A} в степени {B} равно {result}");
 int degree(int number, int degreenumber)
 {
     int composition = number;
-    for(int i = 1; i <= degreenumber; i++)
+    for(int i = 1; i < degreenumber; i++)
     {
-        composition = composition*composition;
+        composition = composition*number;
     }
     return composition;
 }
-Console.WriteLine($"{A} в степени {B} равно {result}");
