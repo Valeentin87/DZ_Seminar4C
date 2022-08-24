@@ -14,3 +14,4 @@ int degree(int number, int degreenumber)
     }
     return composition;
 }
+int clear = 67;
